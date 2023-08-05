@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(236, 169, 44);
+}
+
+.logo-box img{
+    height: 80px;
+}
+
+.navbar{
+    background-color: #0F1111;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    color: white;
+}
+
+.location{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    cursor: pointer;
+}
+.location:hover{
+    color: lightgray;
+}
+
+.location i{
+    grid-row: span 2;
+    align-self: center;
+}
+
+.location span:last-child{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.1rem;
+}
+
+.search form input{
+    width: 30vw;
+    padding: 10px;
+    outline: none;
+    border: 0.2px solid white;
+}
+
+.search form input:focus{
+    border: 0.2px solid rgb(236, 169, 44);
+}
+
+.search form button{
+    border: none;
+    outline: none;
+    background-color: rgb(236, 169, 44);
+    font-size: 1.2vw;
+    padding: 10px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search form select{
+    color: slategray;
+    padding: 10px;
+    outline: none;
+    border: 0.2px solid white;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.account{
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.account:hover{
+    color: lightgray;
+}
+
+.account span:last-child{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.1rem;
+}
+
+.orders{
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.orders:hover{
+    color: lightgray;
+}
+
+.orders span:last-child{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.1rem;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+.cart:hover{
+    color: lightgray;
+}
+
+.cart i{
+    font-size: 2.2rem;
+}
+
+.cart span{
+    font-family: 'Alata', sans-serif;
+}
+
+.tabsbar{
+    grid-template-columns: 1fr 9fr;
+    background-color: rgb(35, 57, 71);
+    padding: 10px 20px;
+}
+
+.options ul{
+    gap: 20px;
+    align-items: center;
+}
+
+.options li{
+    list-style: none;
+    font-family: 'Alata', sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.hamburger{
+    align-items: center;
+}
+
+.hamburger i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hero{
+    min-height: 60vh;
+    background-image: url("../resources/hero_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero p{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #007185;
+}
+
+.categories{
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    background-color: whitesmoke;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding:1.5rem;
+}
+
+.box h3{
+    font-size: 1.3vmax;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.box a{
+    font-size: 1.2vmax;
+    letter-spacing: -0.7px;
+}
+
+.box img{
+    height: 25vw;
+}
+
+footer h3{
+    background-color: rgb(35, 57, 71);
+    color: white;
+    font-weight: 400;
+    font-size: 1vmax;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    background-color: #232F3E;
+    color: white;
+    padding: 3rem;
+    min-height: 90vh;
+}
+
+#foot a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#foot a:hover{
+    text-decoration: underline;
+}
+
+.links ul li{
+    font-size: 1vmax;
+}
+
+.links ul li:first-child{
+    font-size: 1.2vmax;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
